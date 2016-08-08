@@ -1,0 +1,26 @@
+{
+    "name": "haml",
+    "displayName": "Better Haml",
+    "description": "Better Haml syntax highlighting, auto close and suggestions",
+    "version": "0.0.1",
+    "publisher": "karuna",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "haml",
+            "aliases": ["Ruby Haml", "haml"],
+            "extensions": [".haml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "haml",
+            "scopeName": "text.haml",
+            "path": "./syntaxes/haml.tmLanguage"
+        }]
+    }
+}
