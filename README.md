@@ -8,8 +8,8 @@ Will be based on http://haml.info/docs/yardoc/file.REFERENCE.html
 
 ## Todo
 
-- [ ] colorize parentheses attributes
-- [ ] ruby highlighting (=, -, etc)
+- [x] colorize parentheses attributes
+- [x] ruby highlighting (=, -, etc)
 - [ ] autocomplete stuff
 - [x] fix broken highlight with hyphen
 - [x] autoclose quote backtick ruby literal
