@@ -2,14 +2,15 @@
     "name": "haml",
     "displayName": "Better Haml",
     "description": "Better Haml syntax highlighting, auto close and suggestions",
-    "version": "0.0.1",
+    "version": "0.0.5",
     "publisher": "karunamurti",
     "engines": {
         "vscode": "^1.0.0"
     },
     "icon": "images/haml.png",
     "categories": [
-        "Languages"
+        "Languages",
+        "Snippets"
     ],
     "contributes": {
         "languages": [{
@@ -22,6 +23,11 @@
             "language": "haml",
             "scopeName": "text.haml",
             "path": "./syntaxes/haml.tmLanguage"
+        }
+        ],
+        "snippets": [{
+            "language": "haml",
+            "path": "./snippets/snippets.json"
         }]
     }
 }
