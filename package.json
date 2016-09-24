@@ -3,7 +3,7 @@
     "displayName": "Better Haml",
     "description": "Better Haml syntax highlighting, auto close and suggestions",
     "version": "0.0.1",
-    "publisher": "karuna",
+    "publisher": "karunamurti",
     "engines": {
         "vscode": "^1.0.0"
     },
