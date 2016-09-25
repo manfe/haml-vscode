@@ -13,3 +13,4 @@ Will be based on http://haml.info/docs/yardoc/file.REFERENCE.html
 - [ ] autocomplete stuff
 - [x] fix broken highlight with hyphen
 - [x] autoclose quote backtick ruby literal
+- [X] snippets
