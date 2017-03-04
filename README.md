@@ -6,6 +6,9 @@ Only support haml extension, remove sass extension.
 
 Will be based on http://haml.info/docs/yardoc/file.REFERENCE.html
 
+## Screenshot
+![Screnshot](images/screenshot.png)
+
 ## Todo
 
 - [x] colorize parentheses attributes

@@ -58,7 +58,7 @@
         <array>
           <dict>
             <key>include</key>
-            <string>source.ruby.rails</string>
+            <string>source.ruby</string>
           </dict>
         </array>
       </dict>
@@ -121,7 +121,7 @@
         <array>
           <dict>
             <key>include</key>
-            <string>source.ruby.rails</string>
+            <string>source.ruby</string>
           </dict>
         </array>
       </dict>
@@ -241,7 +241,7 @@
             <array>
               <dict>
                 <key>include</key>
-                <string>source.ruby.rails</string>
+                <string>source.ruby</string>
               </dict>
               <dict>
                 <key>include</key>
@@ -302,7 +302,7 @@
             <array>
               <dict>
                 <key>include</key>
-                <string>source.ruby.rails</string>
+                <string>source.ruby</string>
               </dict>
               <dict>
                 <key>include</key>
@@ -337,7 +337,7 @@
         <array>
           <dict>
             <key>include</key>
-            <string>source.ruby.rails</string>
+            <string>source.ruby</string>
           </dict>
         </array>
       </dict>
@@ -352,7 +352,7 @@
         <array>
           <dict>
             <key>include</key>
-            <string>source.ruby.rails</string>
+            <string>source.ruby</string>
           </dict>
         </array>
       </dict>
@@ -435,7 +435,7 @@
         <array>
           <dict>
             <key>include</key>
-            <string>source.ruby.rails</string>
+            <string>source.ruby</string>
           </dict>
         </array>
       </dict>
@@ -794,7 +794,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>source.ruby.rails</string>
+            <string>source.ruby</string>
           </dict>
           <dict>
             <key>include</key>
