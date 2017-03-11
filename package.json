@@ -33,7 +33,7 @@
             {
                 "language": "haml",
                 "scopeName": "text.haml",
-                "path": "./syntaxes/haml.tmLanguage"
+                "path": "./syntaxes/haml.json"
             }
         ],
         "snippets": [
