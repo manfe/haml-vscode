@@ -2,7 +2,7 @@
     "name": "haml",
     "displayName": "Better Haml",
     "description": "Better Haml syntax highlighting, auto close and suggestions",
-    "version": "0.6.0",
+    "version": "0.7.0",
     "publisher": "karunamurti",
     "engines": {
         "vscode": "^1.5.0"
@@ -13,7 +13,12 @@
         "Snippets"
     ],
     "license": "MIT",
-    "keywords": ["haml", "Ruby Haml", "Haml", "HAML"],
+    "keywords": [
+        "haml",
+        "Ruby Haml",
+        "Haml",
+        "HAML"
+    ],
     "contributes": {
         "languages": [
             {
@@ -56,7 +61,9 @@
         "url": "https://github.com/karuna/ruby_haml_for_vscode/issues",
         "email": "karuna.murti@gmail.com"
     },
-    "extensionDependencies": ["rebornix.Ruby"],
+    "extensionDependencies": [
+        "rebornix.Ruby"
+    ],
     "__metadata": {
         "id": "31dab038-d2f7-47c2-894e-5c35684dbd0e",
         "publisherId": "14fb4112-a640-4645-8750-f1fab9c5e87a",
