@@ -30,7 +30,7 @@
     },
     {
       "begin": "^(\\s*):ruby$",
-      "end": "^\\1$",
+      "end": "^(?=\\1[^\\s]+)",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -59,7 +59,7 @@
     },
     {
       "begin": "^(\\s*):javascript$",
-      "end": "^\\1$",
+      "end": "^(?=\\1[^\\s]+)",
       "name": "source.embedded.filter.js",
       "patterns": [
         {
@@ -69,7 +69,7 @@
     },
     {
       "begin": "^(\\s*):ruby$",
-      "end": "^\\1$",
+      "end": "^(?=\\1[^\\s]+)",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -226,7 +226,7 @@
     },
     {
       "begin": "^(\\s*):(ruby|opal)$",
-      "end": "^\\1$",
+      "end": "^(?=\\1[^\\s]+)",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -236,7 +236,7 @@
     },
     {
       "begin": "^(\\s*):ruby$",
-      "end": "^\\1([^\\s]*)$",
+      "end": "^(?=\\1[^\\s]+))",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -246,7 +246,7 @@
     },
     {
       "begin": "^(\\s*):(style|sass)$",
-      "end": "^\\1$",
+      "end": "^(?=\\1[^\\s]+)",
       "name": "source.sass.embedded.filter.haml",
       "patterns": [
         {
@@ -256,7 +256,7 @@
     },
     {
       "begin": "^(\\s*):(java)?script$",
-      "end": "^\\1([^\\s]*)$",
+      "end": "^(?=\\1[^\\s]+)",
       "name": "source.js.embedded.filter.haml",
       "patterns": [
         {
@@ -266,7 +266,7 @@
     },
     {
       "begin": "^(\\s*):coffee(script)?$",
-      "end": "^\\1([^\\s]*)$",
+      "end": "^(?=\\1[^\\s]+)",
       "name": "source.coffee.embedded.filter.haml",
       "patterns": [
         {
@@ -276,7 +276,7 @@
     },
     {
       "begin": "^(\\s*):plain$",
-      "end": "^\\1([^\\s]*)$",
+      "end": "^(?=\\1[^\\s]+)",
       "name": "text.plain.embedded.filter.haml",
       "patterns": [
         {
@@ -291,7 +291,7 @@
           "name": "keyword.control.filter.haml"
         }
       },
-      "end": "^(?!\\1  )",
+      "end": "(?m:(?<=\\n)(?!\\1  |\\n))",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -331,7 +331,7 @@
     },
     {
       "begin": "^(\\s*):(styles|sass)$",
-      "end": "^\\1$",
+      "end": "^(?=\\1[^\\s]+)",
       "name": "source.sass.embedded.filter.haml",
       "patterns": [
         {
@@ -341,7 +341,7 @@
     },
     {
       "begin": "^(\\s*):(java)?script$",
-      "end": "^\\1$",
+      "end": "^(?=\\1[^\\s]+)",
       "name": "source.js.embedded.filter.haml",
       "patterns": [
         {
@@ -351,7 +351,7 @@
     },
     {
       "begin": "^(\\s*):plain$",
-      "end": "^\\1$",
+      "end": "^(?=\\1[^\\s]+)",
       "name": "text.plain.embedded.filter.haml",
       "patterns": [
         {
