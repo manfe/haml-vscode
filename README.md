@@ -17,3 +17,7 @@ Will be based on http://haml.info/docs/yardoc/file.REFERENCE.html
 - [x] fix broken highlight with hyphen
 - [x] autoclose quote backtick ruby literal
 - [X] snippets
+
+
+## Bugs
+- [ ] `:preserve` filter doesn't work correctly yet
