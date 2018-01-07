@@ -9,8 +9,8 @@
   "name": "Ruby Haml",
   "patterns": [
     {
-      "begin": "^( *):javascript",
-      "end": "^(?!\\1  )",
+      "begin": "^(\\s*):javascript",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "js.haml",
       "patterns": [
         {
@@ -19,9 +19,9 @@
       ]
     },
     {
-      "begin": "^\\s*==",
+      "begin": "^(\\s*)==",
       "contentName": "string.quoted.double.ruby",
-      "end": "$\\n?",
+      "end": "$\\n*",
       "patterns": [
         {
           "include": "#interpolated_ruby"
@@ -29,8 +29,8 @@
       ]
     },
     {
-      "begin": "^(\\s*):ruby$",
-      "end": "^(?=\\1[^\\s]+)",
+      "begin": "^(\\s*):ruby",
+      "end": "^(?=\\1\\s+|$\\n*)",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -59,7 +59,7 @@
     },
     {
       "begin": "^(\\s*):javascript$",
-      "end": "^(?=\\1[^\\s]+)",
+      "end": "^(?=\\1\\s+|$\\n*)",
       "name": "source.embedded.filter.js",
       "patterns": [
         {
@@ -69,7 +69,7 @@
     },
     {
       "begin": "^(\\s*):ruby$",
-      "end": "^(?=\\1[^\\s]+)",
+      "end": "^(?=\\1\\s+|$\\n*)",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -226,7 +226,7 @@
     },
     {
       "begin": "^(\\s*):(ruby|opal)$",
-      "end": "^(?=\\1[^\\s]+)",
+      "end": "^(?=\\1\\s+|$\\n*)",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -236,7 +236,7 @@
     },
     {
       "begin": "^(\\s*):ruby$",
-      "end": "^(?=\\1[^\\s]+))",
+      "end": "^(?=\\1\\s+|$\\n*))",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -246,7 +246,7 @@
     },
     {
       "begin": "^(\\s*):(style|sass)$",
-      "end": "^(?=\\1[^\\s]+)",
+      "end": "^(?=\\1\\s+|$\\n*)",
       "name": "source.sass.embedded.filter.haml",
       "patterns": [
         {
@@ -256,7 +256,7 @@
     },
     {
       "begin": "^(\\s*):(java)?script$",
-      "end": "^(?=\\1[^\\s]+)",
+      "end": "^(?=\\1\\s+|$\\n*)",
       "name": "source.js.embedded.filter.haml",
       "patterns": [
         {
@@ -266,7 +266,7 @@
     },
     {
       "begin": "^(\\s*):coffee(script)?$",
-      "end": "^(?=\\1[^\\s]+)",
+      "end": "^(?=\\1\\s+|$\\n*)",
       "name": "source.coffee.embedded.filter.haml",
       "patterns": [
         {
@@ -276,7 +276,7 @@
     },
     {
       "begin": "^(\\s*):plain$",
-      "end": "^(?=\\1[^\\s]+)",
+      "end": "^(?=\\1\\s+|$\\n*)",
       "name": "text.plain.embedded.filter.haml",
       "patterns": [
         {
@@ -291,7 +291,7 @@
           "name": "keyword.control.filter.haml"
         }
       },
-      "end": "(?m:(?<=\\n)(?!\\1  |\\n))",
+      "end": "(?m:(?<=\\n)(?!\\1\\s+|$\\n*))",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -306,7 +306,7 @@
           "name": "keyword.control.filter.haml"
         }
       },
-      "end": "^(?!\\1  )",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "source.js.jquery.embedded.filter.haml",
       "patterns": [
         {
@@ -321,7 +321,7 @@
           "name": "keyword.control.filter.haml"
         }
       },
-      "end": "^(?!\\1  )",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "source.embedded.filter.sass",
       "patterns": [
         {
@@ -331,7 +331,7 @@
     },
     {
       "begin": "^(\\s*):(styles|sass)$",
-      "end": "^(?=\\1[^\\s]+)",
+      "end": "^(?=\\1\\s+|$\\n*)",
       "name": "source.sass.embedded.filter.haml",
       "patterns": [
         {
@@ -341,7 +341,7 @@
     },
     {
       "begin": "^(\\s*):(java)?script$",
-      "end": "^(?=\\1[^\\s]+)",
+      "end": "^(?=\\1\\s+|$\\n*)",
       "name": "source.js.embedded.filter.haml",
       "patterns": [
         {
@@ -351,7 +351,7 @@
     },
     {
       "begin": "^(\\s*):plain$",
-      "end": "^(?=\\1[^\\s]+)",
+      "end": "^(?=\\1\\s+|$\\n*)",
       "name": "text.plain.embedded.filter.haml",
       "patterns": [
         {
@@ -366,7 +366,7 @@
           "name": "keyword.control.filter.haml"
         }
       },
-      "end": "^(?!\\1  )",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "source.embedded.filter.coffee",
       "patterns": [
         {
@@ -396,7 +396,7 @@
     },
     {
       "begin": "^(\\s*)(:php)",
-      "end": "^(?!\\1\\s+|\\n)",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "meta.embedded.php",
       "captures": {
         "2": {
@@ -411,7 +411,7 @@
     },
     {
       "begin": "^(\\s*)(:markdown)",
-      "end": "^(?!\\1\\s+|\\n)",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "meta.embedded.markdown",
       "captures": {
         "2": {
@@ -426,7 +426,7 @@
     },
     {
       "begin": "^(\\s*)(:(css|styles?))$",
-      "end": "^(?!\\1\\s+|\\n)",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "meta.embedded.css",
       "captures": {
         "2": {
@@ -441,7 +441,7 @@
     },
     {
       "begin": "^(\\s*)(:sass)$",
-      "end": "^(?!\\1\\s+|\\n)",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "meta.embedded.sass",
       "captures": {
         "2": {
@@ -456,7 +456,7 @@
     },
     {
       "begin": "^(\\s*)(:scss)$",
-      "end": "^(?!\\1\\s+|\\n)",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "meta.embedded.scss",
       "captures": {
         "2": {
@@ -595,7 +595,7 @@
     "rubyline": {
       "begin": "(&amp|!)?(=|-|~)",
       "contentName": "source.ruby.embedded.haml",
-      "end": "((do|\\{)( \\|[.*]+\\|)?)$|$|^(?!.*\\|\\s*$\\n)",
+      "end": "((do|\\{)( \\|[.*]+\\|)?)$|$|^(?!.*\\|\\s*)$\\n?",
       "endCaptures": {
         "1": {
           "name": "source.ruby.embedded.html"
@@ -623,7 +623,7 @@
           }
         },
         {
-          "match": "\\s+(catch|try|throw|exception|finally|die)(?=\\s|\\(|\\n)",
+          "match": "\\s+(catch|try|throw|exception|finally|die)(?=\\s|\\(|\\n*)",
           "name": "keyword.control.exception.php"
         },
         {
@@ -643,7 +643,7 @@
           }
         },
         {
-          "match": "(\\||,|<|do|\\{)\\s*(\\#.*)?$\\n",
+          "match": "(\\||,|<|do|\\{)\\s*(\\#.*)?$\\n*",
           "name": "source.ruby",
           "patterns": [
             {
