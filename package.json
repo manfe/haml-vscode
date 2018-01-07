@@ -2,7 +2,7 @@
     "name": "haml",
     "displayName": "Better Haml",
     "description": "Better Haml syntax highlighting, auto close and suggestions",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "karunamurti",
     "engines": {
         "vscode": "^1.5.0"
