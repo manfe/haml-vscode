@@ -57,15 +57,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/karuna/vscode-haml.git"
+        "url": "https://github.com/karuna/haml-vscode.git"
     },
     "galleryBanner": {
         "color": "#888888",
         "theme": "dark"
     },
-    "homepage": "https://github.com/karuna/vscode-haml",
+    "homepage": "https://github.com/karuna/haml-vscode",
     "bugs": {
-        "url": "https://github.com/karuna/vscode-haml/issues",
+        "url": "https://github.com/karuna/haml-vscode/issues",
         "email": "karuna.murti@gmail.com"
     },
     "extensionDependencies": [
