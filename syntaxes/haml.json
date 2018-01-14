@@ -9,16 +9,6 @@
   "name": "Ruby Haml",
   "patterns": [
     {
-      "begin": "^(\\s*):javascript",
-      "end": "^(?!\\1\\s+|$\\n*)",
-      "name": "js.haml",
-      "patterns": [
-        {
-          "include": "source.js"
-        }
-      ]
-    },
-    {
       "begin": "^(\\s*)==",
       "contentName": "string.quoted.double.ruby",
       "end": "$\\n*",
@@ -48,19 +38,9 @@
       "name": "meta.prolog.haml"
     },
     {
-      "begin": ":javascript",
-      "end": "^(\\s+)?%",
-      "name": "source.js.embedded.haml",
-      "patterns": [
-        {
-          "include": "source.js"
-        }
-      ]
-    },
-    {
-      "begin": "^(\\s*):javascript$",
-      "end": "^(?=\\1\\s+|$\\n*)",
-      "name": "source.embedded.filter.js",
+      "begin": "^(\\s*):javascript",
+      "end": "^(?!\\1\\s+|$\\n*)",
+      "name": "js.haml",
       "patterns": [
         {
           "include": "source.js"
@@ -255,18 +235,8 @@
       ]
     },
     {
-      "begin": "^(\\s*):(java)?script$",
-      "end": "^(?=\\1\\s+|$\\n*)",
-      "name": "source.js.embedded.filter.haml",
-      "patterns": [
-        {
-          "include": "#javascript_filter"
-        }
-      ]
-    },
-    {
-      "begin": "^(\\s*):coffee(script)?$",
-      "end": "^(?=\\1\\s+|$\\n*)",
+      "begin": "^(\\s*):coffee(script)?",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "source.coffee.embedded.filter.haml",
       "patterns": [
         {
@@ -300,21 +270,6 @@
       ]
     },
     {
-      "begin": "^(\\s*)(:javascript)",
-      "beginCaptures": {
-        "2": {
-          "name": "keyword.control.filter.haml"
-        }
-      },
-      "end": "^(?!\\1\\s+|$\\n*)",
-      "name": "source.js.jquery.embedded.filter.haml",
-      "patterns": [
-        {
-          "include": "source.js.jquery"
-        }
-      ]
-    },
-    {
       "begin": "^(\\s*)(:sass)",
       "beginCaptures": {
         "2": {
@@ -340,37 +295,12 @@
       ]
     },
     {
-      "begin": "^(\\s*):(java)?script$",
-      "end": "^(?=\\1\\s+|$\\n*)",
-      "name": "source.js.embedded.filter.haml",
-      "patterns": [
-        {
-          "include": "source.js"
-        }
-      ]
-    },
-    {
       "begin": "^(\\s*):plain$",
       "end": "^(?=\\1\\s+|$\\n*)",
       "name": "text.plain.embedded.filter.haml",
       "patterns": [
         {
           "include": "text.plain"
-        }
-      ]
-    },
-    {
-      "begin": "^(\\s*)(:coffee)",
-      "beginCaptures": {
-        "2": {
-          "name": "keyword.control.filter.haml"
-        }
-      },
-      "end": "^(?!\\1\\s+|$\\n*)",
-      "name": "source.embedded.filter.coffee",
-      "patterns": [
-        {
-          "include": "source.coffee"
         }
       ]
     },
@@ -527,16 +457,6 @@
         },
         {
           "include": "source.ruby#escaped_char"
-        }
-      ]
-    },
-    "javascript_filter": {
-      "patterns": [
-        {
-          "include": "#interpolated_ruby"
-        },
-        {
-          "include": "source.js"
         }
       ]
     },
