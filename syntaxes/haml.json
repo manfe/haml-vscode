@@ -19,7 +19,7 @@
       ]
     },
     {
-      "begin": "^(\\s*):ruby",
+      "begin": "^(\\s*):(ruby|opal)$",
       "end": "^(?=\\1\\s+|$\\n*)",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
@@ -44,16 +44,6 @@
       "patterns": [
         {
           "include": "source.js"
-        }
-      ]
-    },
-    {
-      "begin": "^(\\s*):ruby$",
-      "end": "^(?=\\1\\s+|$\\n*)",
-      "name": "source.ruby.embedded.filter.haml",
-      "patterns": [
-        {
-          "include": "source.ruby"
         }
       ]
     },
@@ -201,26 +191,6 @@
         {
           "match": "/",
           "name": "punctuation.terminator.tag.haml"
-        }
-      ]
-    },
-    {
-      "begin": "^(\\s*):(ruby|opal)$",
-      "end": "^(?=\\1\\s+|$\\n*)",
-      "name": "source.ruby.embedded.filter.haml",
-      "patterns": [
-        {
-          "include": "source.ruby"
-        }
-      ]
-    },
-    {
-      "begin": "^(\\s*):ruby$",
-      "end": "^(?=\\1\\s+|$\\n*))",
-      "name": "source.ruby.embedded.filter.haml",
-      "patterns": [
-        {
-          "include": "source.ruby"
         }
       ]
     },
