@@ -20,7 +20,7 @@
     },
     {
       "begin": "^(\\s*):ruby",
-      "end": "^(?=\\1\\s+|$\\n*)",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -49,7 +49,7 @@
     },
     {
       "begin": "^(\\s*):ruby$",
-      "end": "^(?=\\1\\s+|$\\n*)",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -206,7 +206,7 @@
     },
     {
       "begin": "^(\\s*):(ruby|opal)$",
-      "end": "^(?=\\1\\s+|$\\n*)",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
@@ -216,7 +216,7 @@
     },
     {
       "begin": "^(\\s*):ruby$",
-      "end": "^(?=\\1\\s+|$\\n*))",
+      "end": "^(?!\\1\\s+|$\\n*)",
       "name": "source.ruby.embedded.filter.haml",
       "patterns": [
         {
