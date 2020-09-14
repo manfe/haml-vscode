@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.3.1] - 20209-09-15
+- Various fixes
+
 ## [1.0.0] - 2018-01-07
 - Add test for ruby and js filter
 - Ignore test files
