@@ -1,6 +1,9 @@
 # Changelog
 
-## [1.3.1] - 20209-09-15
+## [1.4.0] - 2020-09-15
+- Multiline by Nicolas Goutay
+
+## [1.3.1] - 2020-09-15
 - Various fixes
 
 ## [1.0.0] - 2018-01-07
