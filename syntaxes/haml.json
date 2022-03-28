@@ -1,7 +1,8 @@
 {
   "fileTypes": [
     "haml",
-    "html.haml"
+    "html.haml",
+    "hamlbars"
   ],
   "foldingStartMarker": "^\\s*([-%#\\:\\.\\w\\=].*)\\s$",
   "foldingStopMarker": "^\\s*$",
